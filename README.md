@@ -16,7 +16,7 @@ This repository documents a multi-agent workflow where AI agents cooperate to:
 - track campaign state
 - recover from model limits and browser blockers
 
-![Project Overview](IntroPage.png)
+![Project Overview](intro.png)
 
 > **Image note:** `Agents.png` is a real screenshot from my Paseo environment.  
 > `IntroPage.png`, `Process Pipeline.png`, and `Excel.png` are illustrative visuals created to explain the architecture and workflow. They do not represent real employer data.
@@ -25,7 +25,7 @@ This repository documents a multi-agent workflow where AI agents cooperate to:
 
 ## Architecture
 
-![System Architecture](Process%20Pipeline.png)
+![System Architecture](process-pipeline.png)
 
 The current design uses four agent profiles:
 
@@ -92,7 +92,7 @@ Only **one operator** is allowed to control Chrome at a time.
 
 ## Real Agent Orchestration
 
-![Paseo Agents](Agents.png)
+![Paseo Agents](agents.png)
 
 Paseo is used to orchestrate the agents.
 
@@ -172,7 +172,7 @@ The dedicated profile keeps automation state separate from the user's normal bro
 
 ## Application Tracking
 
-![Application Tracker](Excel.png)
+![Application Tracker](excel.png)
 
 The visual above is an illustrative tracker concept.
 
