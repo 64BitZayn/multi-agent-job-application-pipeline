@@ -141,7 +141,40 @@ Routine applications are handled with a Claude self-check.
 Higher-value, ambiguous, legal, compensation-related, or technically complex applications can be escalated to Codex for independent review.
 
 ---
+---
+## What is Paseo?
 
+[Paseo](https://paseo.sh/) is the orchestration layer used to run and coordinate
+the AI agents in this project.
+
+Rather than running Claude Code and Codex as completely separate terminal
+sessions, Paseo provides a single environment where agents can be configured,
+started, monitored, and delegated work.
+
+In this project, Paseo is responsible for:
+
+- defining reusable agent profiles
+- launching Claude Code and Codex workers
+- allowing one agent to delegate work to another
+- keeping reviewer agents available for reuse
+- monitoring active and idle agents
+- coordinating fallback operators
+- providing a shared workspace for the campaign
+
+For example, the primary Claude operator can launch or reuse a Codex reviewer
+when an application needs an independent second opinion.
+
+```text
+Claude - Job Operator
+        |
+        | complex application
+        v
+Codex - Application Reviewer
+        |
+        | APPROVED / CHANGES REQUIRED
+        v
+Claude - Job Operator
+---
 ## Browser Automation
 
 The operator uses a dedicated Chrome profile exposed through the Chrome DevTools Protocol (CDP).
