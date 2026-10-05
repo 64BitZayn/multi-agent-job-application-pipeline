@@ -9,7 +9,7 @@ The system separates four concerns:
 3. independent review
 4. persistent campaign state
 
-![System Architecture](Process%20Pipeline.png)
+![System Architecture](process-pipeline.png)
 
 ---
 
