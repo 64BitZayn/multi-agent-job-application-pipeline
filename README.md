@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.png" alt="Multi-Agent Job Application Pipeline" width="100%"></p>
+
 # Multi-Agent Job Application Pipeline
 
 I’m currently looking for a **Werkstudent / part-time / junior role in IT, cybersecurity, or AI**.
